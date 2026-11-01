@@ -1,0 +1,36 @@
+.hakkimizda_bolumu {
+    max-width: 900px;
+    margin: 20px auto 60px auto;
+    padding: 0 20px;
+}
+
+.vizyon_kutusu {
+    background-color: var(--arka_plan);
+    border: 1px solid var(--kutu_cercevesi);
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.hakkimizda_gorsel {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    border: 2px solid var(--kutu_cercevesi);
+}
+
+.hakkimizda_metin h3 {
+    color: var(--pembe);
+    margin-top: 0;
+}
+
+.hakkimizda_metin p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+

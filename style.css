@@ -14,7 +14,7 @@ body {
     font-family: sans-serif;
 }
 
-.ustmenu {
+.ust_menu {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
@@ -38,8 +38,12 @@ body {
     text-decoration: none; 
     color: var(--yazi);
     font-weight: bold;
+    transition: color 0.3s;
 }
-
+/*2.hafta efekt eklendi*/
+.kategoriler a:hover {
+    color: var(--pembe);
+}
 
 .afis img {
     width: 100%; 
@@ -59,12 +63,25 @@ body {
     padding: 15px;
     text-align: center;
     border-radius: 10px; 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+/*2.hafta efekt eklendi*/
+.urun_karti:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 0, 127, 0.2);
+    border-color: var(--pembe_koyu);
 }
 
 .urun_karti img {
     width: 100%; 
     border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.urun_karti img:hover{
+    transform: translateY(-5px);
+}
+
 
 .sepete_ekle_butonu {
     background-color: var(--pembe_koyu);
@@ -74,18 +91,28 @@ body {
     width: 100%; 
     border-radius: 5px;
     cursor: pointer; 
+    transition: background-color 0.3s;
+}
+/*2.hafta efekt eklendi*/
+.sepete_ekle_butonu:hover {
+    background-color: var(--pembe_koyu);
 }
 
 .sepet {
     position: fixed; 
     bottom: 30px;    
     right: 30px;     
-    background-color: var(--siber-pembe);
+    background-color: var(--pembe);
     width: 70px;
     height: 70px;
     border-radius: 50%; 
     display: flex;
     justify-content: center;
+    transition: transform 0.3s;
+}
+/*2.hafta efekt eklendi*/
+.sepet:hover {
+    transform: scale(1.1);
 }
 
 .sepet_ikonu {

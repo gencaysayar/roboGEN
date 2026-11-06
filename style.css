@@ -45,10 +45,61 @@ body {
     color: var(--pembe);
 }
 
-.afis img {
-    width: 100%; 
-    max-height: 400px; 
-    object-fit: cover; 
+/* --- 3.hafta afis --- */
+.afis {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: var(--kutu_cercevesi);
+    padding: 50px;
+    margin: 40px 50px;
+    border-radius: 15px;
+    gap: 30px;
+}
+
+.afis_metin {
+    flex: 1; 
+}
+
+.afis_metin h1 {
+    font-size: 38px;
+    color: var(--pembe);
+    margin-bottom: 15px;
+}
+
+.afis_metin p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: var(--yazi);
+}
+
+.afis_butonu {
+    display: inline-block;
+    background-color: var(--pembe_koyu);
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.afis_butonu:hover {
+    background-color: var(--pembe);
+    transform: translateY(-5px); 
+}
+
+.afis_gorsel {
+    flex: 1; 
+    text-align: right;
+}
+
+.afis_gorsel img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .kart_izgarasi {
@@ -128,4 +179,79 @@ body {
     padding: 5px 10px;
     border-radius: 50%;
     font-weight: bold;
+}
+
+/*3.hafta footer*/
+.site_footer {
+    background-color: var(--yazi); 
+    color: var(--arka_plan); 
+    padding: 40px 50px 15px 50px;
+    margin-top: 60px; 
+}
+
+/*flexboxla 3 sütunu yan yana diziyoruz*/
+.footer_icerik {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.footer_sutun {
+    flex: 1; /*Sütunların eşit genişlikte olmasını sağlar*/
+}
+
+.footer_sutun i {
+    color: var(--pembe);
+    width: 20px; /*ikon boyutları farklı olduğu için eşitledik*/
+    margin-right: 10px; 
+    font-size: 18px;
+}
+
+.footer_logo {
+    color: var(--pembe);
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.footer_sutun h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.footer_sutun p {
+    line-height: 1.6;
+    margin: 8px 0;
+    color: #ffffff; 
+}
+
+/*site haritası*/
+.footer_sutun ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.footer_sutun ul li {
+    margin-bottom: 12px;
+}
+
+.footer_sutun ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer_sutun ul li a:hover {
+    color: var(--pembe);
+}
+
+/*telif kısımı*/
+.footer_telif{
+    text-align: center;
+    padding-top: 20px;
+    color: #888; 
+    font-size: 14px;
 }
